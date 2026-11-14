@@ -1,0 +1,42 @@
+
+### Environment variables and secrets ###
+.env
+.env.*
+!.env.example
+
+### Maven ###
+target/
+
+### Java ###
+*.class
+
+### Logs ###
+*.log
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse / STS ###
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Other build output ###
+build/
