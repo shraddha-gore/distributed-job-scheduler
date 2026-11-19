@@ -68,4 +68,17 @@ public class Job {
     @LastModifiedDate
     @Column(name = "updated_at", nullable = false)
     private Instant updatedAt;
+
+    public static Job create(JobType jobType, Map<String, Object> payload, Instant scheduledAt) {
+        Job job = new Job();
+
+        job.setId(UUID.randomUUID());
+        job.setJobType(jobType);
+        job.setPayload(payload);
+        job.setScheduledAt(scheduledAt);
+        job.setStatus(JobStatus.PENDING);
+        job.setNextRunAt(scheduledAt);
+
+        return job;
+    }
 }
