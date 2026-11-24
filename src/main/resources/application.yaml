@@ -23,3 +23,8 @@ spring:
     flyway:
         enabled: true
         locations: classpath:db/migration
+
+scheduler:
+    batch-size: 10
+    lease-duration: 60s
+    fixed-delay: 1000ms
